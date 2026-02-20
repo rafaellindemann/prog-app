@@ -1,6 +1,6 @@
-
+import './DiaDaSemana.css'
 function DiaDaSemana() {
-    function verificarDia(){
+    function verificarDia(){ // sq2-3
         // let dia = Number(prompt("Digite o dia da semana (1 a 7):"))
         let dia = prompt("Digite o dia da semana (1 a 7):")
         dia = Number(dia)
@@ -44,7 +44,7 @@ function DiaDaSemana() {
     }
 
     return (
-        <div>
+        <div className={"container-dia"}>
             <h2>Dia da semana</h2>
             <button onClick={verificarDia}>Verificar dia</button>
         </div>
